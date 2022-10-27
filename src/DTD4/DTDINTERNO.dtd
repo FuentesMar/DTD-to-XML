@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Resultadospartidos [
+            <!ELEMENT Resultadospartidos (Equipos)>
+        <!ELEMENT Equipos (Equipo)>
+        <!ELEMENT Equipo (#PCDATA, Partidos, Goles, DIF, PTS)>
+        <!ELEMENT Partidos (PJ, PG, PP, PE)>
+        <!ELEMENT PJ (#PCDATA)> <!-- Partidos jugados -->
+        <!ELEMENT PG (#PCDATA)> <!-- Partidos ganados -->
+        <!ELEMENT PP (#PCDATA)><!-- Partidos perdidos -->
+        <!ELEMENT PE (#PCDATA)><!-- Partidos empate-->
+        <!ELEMENT Goles (GF, GC)>
+        <!ELEMENT GF (#PCDATA)> <!-- Goles a favor -->
+        <!ELEMENT GC (#PCDATA)> <!-- Goles en contra -->
+        <!ELEMENT DIF (#PCDATA)*> <!-- Diferencia de puntos  -->
+        <!ELEMENT PTS (#PCDATA)> <!-- Puntos  -->
+
+        ]>\
+
+ <Resultadospartidos>
+     <Equipos>
+         <Equipo>
+             AMERICA
+             <Goles>
+                 <GF>38</GF>
+                 <GC>17</GC>
+             </Goles>
+             <Partidos>
+                 <PJ>17</PJ>
+                 <PG>12</PG>
+                 <PP>3</PP>
+                 <PE>2</PE>
+             </Partidos>
+             <DIF>+21</DIF>
+             <PTS>38</PTS>
+         </Equipo>
+         <Equipo>
+             Santos
+             <Partidos>
+                 <PJ>17</PJ>
+                 <PG>10</PG>
+                 <PP>4</PP>
+                 <PE>3</PE>
+             </Partidos>
+             <Goles>
+                 <GF>38</GF>
+                 <GC>21</GC>
+             </Goles>
+             <DIF>+17</DIF>
+             <PTS>33</PTS>
+         </Equipo>
+     </Equipos>
+ </Resultadospartidos>
+
+        <!-- SOLO AGREGUE UN PAR PARA DAR UNA DEMOSTRACION DE COMO ES QUE SE DEBERIA VER  -->

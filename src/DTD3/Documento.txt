@@ -1,0 +1,47 @@
+ Escribir la DTD y el ejemplar de documento XML que permita modelar los siguientes datos de ventas de una editorial:
+<!ATTLIST fecha #REQUIRED>
+        <!ATTLIST norte #REQUIRED>
+        <!ATTLIST centro #REQUIRED>
+Ediciones Aranda
+Informe regional de ventas
+Descripción: informe de ventas para las regiones Norte, Centro y Sur
+Fecha del informe: 30/09/2021
+Region
+Trimestre
+Libros Vendidos
+Norte
+1
+24000
+2
+38600
+3
+NO_INFO
+4
+NO_INFO
+Centro
+1
+NO_INFO
+2
+16080
+3
+25000
+4
+29000
+Sur
+1
+27000
+2
+31400
+3
+40100
+4
+30000
+
+Se deben tener en cuenta las siguientes consideraciones:
+
+Es obligatorio que el informe lleve una fecha
+Se debe poder diferenciar la parte de la cabecera del informe de la parte con los datos
+Siempre deben aparecer las tres regiones en el informe, y ninguna más
+Para cada zona deben aparecer siempre los cuatro trimestres, aunque falte la información sobre los libros vendidos
+Si no se incluye el número de libros vendidos en los datos, en el informe aparecerá la cadena NO_INFO
+El número de trimestre sólo puede tomar los valores 1, 2, 3 o 4
